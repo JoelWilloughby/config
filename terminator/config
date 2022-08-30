@@ -1,0 +1,175 @@
+[global_config]
+  title_transmit_fg_color = "#d3d7cf"
+  title_transmit_bg_color = "#d65d0e"
+  title_inactive_bg_color = "#888a85"
+[keybindings]
+  go_up = <Primary>Up
+  go_down = <Primary>Down
+  go_left = <Primary>Left
+  go_right = <Primary>Right
+  next_tab = <Shift>Right
+  prev_tab = <Shift>Left
+[profiles]
+  [[default]]
+    background_color = "#282828"
+    background_darkness = 0.93
+    cursor_color = "#aaaaaa"
+    font = SauceCodePro Nerd Font Mono 11
+    foreground_color = "#ebdbb2"
+    scrollback_lines = 10000
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+  [[New Layout]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 72:27
+      maximised = True
+      fullscreen = False
+      size = 1848, 1016
+      title = jwilloughby@ubuntu: ~
+      last_active_window = True
+    [[[child1]]]
+      type = Notebook
+      parent = child0
+      order = 0
+      labels = None, None, None
+      last_active_term = 198ffa65-be15-4297-abc5-da051f4cba16, 4c7eadd4-8b14-429f-932f-194a355286a1, 69815dca-cdf5-4bed-9f30-7e199d4ca87c
+      active_page = 1
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 921
+      ratio = 0.5002715915263444
+    [[[child3]]]
+      type = VPaned
+      parent = child2
+      order = 0
+      position = 487
+      ratio = 0.5010288065843621
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 198ffa65-be15-4297-abc5-da051f4cba16
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = default
+      uuid = 8a413f44-a88c-4f30-8e2b-126974e3002b
+    [[[child6]]]
+      type = VPaned
+      parent = child2
+      order = 1
+      position = 487
+      ratio = 0.5010288065843621
+    [[[terminal7]]]
+      type = Terminal
+      parent = child6
+      order = 0
+      profile = default
+      uuid = a09c9fa3-9f1b-4d61-b4b5-81639654662e
+    [[[terminal8]]]
+      type = Terminal
+      parent = child6
+      order = 1
+      profile = default
+      uuid = 72b59240-e5ca-45df-b440-6cf7b7c53861
+    [[[child9]]]
+      type = HPaned
+      parent = child1
+      order = 1
+      position = 920
+      ratio = 0.4997284084736556
+    [[[child10]]]
+      type = VPaned
+      parent = child9
+      order = 0
+      position = 486
+      ratio = 0.5
+    [[[terminal11]]]
+      type = Terminal
+      parent = child10
+      order = 0
+      profile = default
+      uuid = 1c4fff11-9377-4730-95ca-07d0d753261f
+    [[[terminal12]]]
+      type = Terminal
+      parent = child10
+      order = 1
+      profile = default
+      uuid = 3b618e32-9414-4180-aeb2-394a8fc3f8a8
+    [[[child13]]]
+      type = VPaned
+      parent = child9
+      order = 1
+      position = 486
+      ratio = 0.5
+    [[[terminal14]]]
+      type = Terminal
+      parent = child13
+      order = 0
+      profile = default
+      uuid = 4c7eadd4-8b14-429f-932f-194a355286a1
+    [[[terminal15]]]
+      type = Terminal
+      parent = child13
+      order = 1
+      profile = default
+      uuid = 5f484136-197c-47a4-aa95-84d639aa925a
+    [[[child16]]]
+      type = HPaned
+      parent = child1
+      order = 2
+      position = 920
+      ratio = 0.4997284084736556
+    [[[child17]]]
+      type = VPaned
+      parent = child16
+      order = 0
+      position = 486
+      ratio = 0.5
+    [[[terminal18]]]
+      type = Terminal
+      parent = child17
+      order = 0
+      profile = default
+      uuid = 3889040d-fdff-4895-a492-e78f11228eda
+    [[[terminal19]]]
+      type = Terminal
+      parent = child17
+      order = 1
+      profile = default
+      uuid = 85ca0b35-e2ee-4371-ae54-b5b40ac92c1e
+    [[[child20]]]
+      type = VPaned
+      parent = child16
+      order = 1
+      position = 486
+      ratio = 0.5
+    [[[terminal21]]]
+      type = Terminal
+      parent = child20
+      order = 0
+      profile = default
+      uuid = 69815dca-cdf5-4bed-9f30-7e199d4ca87c
+    [[[terminal22]]]
+      type = Terminal
+      parent = child20
+      order = 1
+      profile = default
+      uuid = d4bb0e94-dfea-443c-b020-cb69a69a279a
+[plugins]
