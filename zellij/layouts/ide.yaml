@@ -21,21 +21,23 @@ template:
 
 tabs:
   - name: tab_1
-    direction: Vertical
+    direction: horizontal
+    focus: true
     parts:
-      - direction: Horizontal
-        split_size: {percent: 40}
-        parts:
-          - direction: Vertical
-          - direction: Vertical
-      - direction: Horizontal
+      - direction: vertical
         split_size: {percent: 60}
         parts:
-          - direction: Vertical
+          - direction: horizontal
             split_size: {percent: 60}
-          - direction: Vertical
+          - direction: horizontal
             split_size: {percent: 40}
             parts:
-              - direction: Horizontal
-              - direction: Horizontal
-  - name: tab_2
+              - direction: vertical
+              - direction: vertical
+      - direction: Vertical
+        split_size: {percent: 40}
+        parts:
+          - direction: horizontal
+            split_size: {percent: 50}
+          - direction: horizontal
+            split_size: {percent: 50}

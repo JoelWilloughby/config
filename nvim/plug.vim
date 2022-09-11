@@ -25,12 +25,27 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
+" Auto Complete
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+" For vsnip users.
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+
+" Indent guides
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 call plug#end()
 
 " Configuration
 runtime ./lspconfig.lua
 runtime ./treesitter.lua
 runtime ./telescope.lua
+runtime ./nvim-cmp.vim
+runtime ./indent-blankline.lua
 
 set background=dark
 colorscheme gruvbox

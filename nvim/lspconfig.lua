@@ -37,22 +37,26 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
+-- Set up lspconfig.with nvim-cmp
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
 require('lspconfig')['rust_analyzer'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    capabilities = capabilities,
     -- Server-specific settings...
     settings = {
       ["rust-analyzer"] = {}
     }
 }
 
-require('lspconfig')['clangd'].setup{
+require('lspconfig').clangd.setup{
     on_attach = on_attach,
     flags = lsp_flags,
-    settings = {
-        ["cmd"] = { "clangd-12" },
-        ["file_types"] = { "c", "cpp", "cc" },
-        ["single_file_support"] = true
-    }
+    capabilities = capabilities,
+
+    cmd = { "clangd-12", "--background-index" },
+    filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
+    single_file_support = true,
 }
 
