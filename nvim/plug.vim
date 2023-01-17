@@ -36,7 +36,11 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
 " Indent guides
-Plug 'lukas-reineke/indent-blankline.nvim'
+" This is really slow unfortunately
+" Plug 'lukas-reineke/indent-blankline.nvim'
+
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-tree/nvim-tree.lua'
 
 call plug#end()
 
@@ -45,7 +49,8 @@ runtime ./lspconfig.lua
 runtime ./treesitter.lua
 runtime ./telescope.lua
 runtime ./nvim-cmp.vim
-runtime ./indent-blankline.lua
+" runtime ./indent-blankline.lua
+runtime ./nvim-tree.lua
 
 set background=dark
 colorscheme gruvbox

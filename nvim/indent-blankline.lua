@@ -9,30 +9,30 @@ vim.opt.termguicolors = true
 vim.cmd [[highlight IndentBlanklineIndent1 guibg=#282828]]
 vim.cmd [[highlight IndentBlanklineIndent2 guibg=#202121]]
 
-vim.opt.list = true
+-- vim.opt.list = true
 
-require("indent_blankline").setup {
-    -- show_current_context = true,
-    -- show_current_context_start = true,
-    show_first_indent_level = false,
-    space_char_blankline = " ",
-    char_blankline = "",
-    -- char = "│",
-    use_treesitter = true,
-    char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-    },
-    space_char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-    },
-    -- char_highlight_list = {
-    --     "IndentBlanklineIndent1",
-    --     "IndentBlanklineIndent2",
-    --     "IndentBlanklineIndent3",
-    --     "IndentBlanklineIndent4",
-    --     "IndentBlanklineIndent5",
-    --     "IndentBlanklineIndent6",
-    -- },
-}
+-- require("indent_blankline").setup {
+--     -- show_current_context = true,
+--     -- show_current_context_start = true,
+--     show_first_indent_level = false,
+--     space_char_blankline = " ",
+--     char_blankline = "",
+--     -- char = "│",
+--     use_treesitter = true,
+--     char_highlight_list = {
+--         "IndentBlanklineIndent1",
+--         "IndentBlanklineIndent2",
+--     },
+--     space_char_highlight_list = {
+--         "IndentBlanklineIndent1",
+--         "IndentBlanklineIndent2",
+--     },
+--     -- char_highlight_list = {
+--     --     "IndentBlanklineIndent1",
+--     --     "IndentBlanklineIndent2",
+--     --     "IndentBlanklineIndent3",
+--     --     "IndentBlanklineIndent4",
+--     --     "IndentBlanklineIndent5",
+--     --     "IndentBlanklineIndent6",
+--     -- },
+-- }
