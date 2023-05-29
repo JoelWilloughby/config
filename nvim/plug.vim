@@ -5,7 +5,7 @@ Plug 'neovim/nvim-lspconfig'
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'p00f/nvim-ts-rainbow'
+" Plug 'p00f/nvim-ts-rainbow'
 
 " Gruvbox theme
 Plug 'ellisonleao/gruvbox.nvim'
@@ -16,7 +16,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Git gutter
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 
 " Lightline, better status
 Plug 'itchyny/lightline.vim'
