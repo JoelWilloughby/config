@@ -68,8 +68,10 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 " Jump back and forward
 nnoremap <leader>b <C-o>
 nnoremap <leader>n <C-i>
+" Open/Close nvim tree
+nnoremap <leader>tt :NvimTreeToggle<CR>
 
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :mark q|%s/\s\+$//e|normal! `q
 autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy
 
 " Load plugins and configuration
