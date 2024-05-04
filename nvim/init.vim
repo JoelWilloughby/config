@@ -70,6 +70,10 @@ nnoremap <leader>b <C-o>
 nnoremap <leader>n <C-i>
 " Open/Close nvim tree
 nnoremap <leader>tt :NvimTreeToggle<CR>
+nnoremap <leader>rt :NvimTreeRefresh<CR>
+" Open/Close trouble
+nnoremap <leader>tr :TroubleToggle<CR>
+nnoremap <leader>rr :TroubleRefresh<CR>
 
 autocmd BufWritePre * :mark q|%s/\s\+$//e|normal! `q
 autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy

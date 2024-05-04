@@ -2,10 +2,10 @@ call plug#begin(stdpath('data') . '/plugged')
 
 " Lsp configuration stuff
 Plug 'neovim/nvim-lspconfig'
+Plug 'folke/lsp-trouble.nvim'
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter'
-" Plug 'p00f/nvim-ts-rainbow'
 
 " Gruvbox theme
 Plug 'ellisonleao/gruvbox.nvim'
@@ -15,11 +15,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
-" Git gutter
-" Plug 'airblade/vim-gitgutter'
-
-" Lightline, better status
-Plug 'itchyny/lightline.vim'
+Plug 'nvim-lualine/lualine.nvim'
 
 " Useful
 Plug 'tpope/vim-commentary'
@@ -35,14 +31,13 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
-" Indent guides
-" This is really slow unfortunately
-" Plug 'lukas-reineke/indent-blankline.nvim'
-
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 
 call plug#end()
+
+set background=dark
+colorscheme gruvbox
 
 " Configuration
 runtime ./lspconfig.lua
@@ -51,7 +46,7 @@ runtime ./telescope.lua
 runtime ./nvim-cmp.vim
 " runtime ./indent-blankline.lua
 runtime ./nvim-tree.lua
-
-set background=dark
-colorscheme gruvbox
+" runtime ./lightline.vim
+runtime ./lualine.lua
+runtime ./trouble.lua
 

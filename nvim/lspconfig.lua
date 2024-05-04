@@ -56,7 +56,7 @@ require('lspconfig').clangd.setup{
     flags = lsp_flags,
     capabilities = capabilities,
 
-    cmd = { "clangd-12", "--background-index" },
+    cmd = { "clangd-14", "--background-index" },
     filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
     single_file_support = true,
 }
